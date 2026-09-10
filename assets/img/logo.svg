@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 60" width="260" height="60" role="img" aria-label="Artes of Culminum">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&amp;display=swap');
+    text { font-family: 'Cormorant Garamond', Georgia, serif; fill: #1C1917; }
+  </style>
+  <!-- Top rule -->
+  <line x1="0" y1="8" x2="260" y2="8" stroke="#D6CFC4" stroke-width="0.75"/>
+  <!-- ARTES OF CULMINUM text -->
+  <text x="130" y="36" text-anchor="middle" font-size="16" font-variant="small-caps" letter-spacing="3" font-weight="600">ARTES</text>
+  <text x="130" y="36" text-anchor="middle" font-size="16" font-variant="small-caps" letter-spacing="3" font-weight="600">
+    <tspan font-style="italic" font-size="12" font-weight="400" fill="#8C7B6A" letter-spacing="1" dx="48">of</tspan>
+    <tspan font-variant="small-caps" font-size="16" font-weight="600" fill="#1C1917" letter-spacing="3" dx="6">Culminum</tspan>
+  </text>
+  <!-- Redo with proper layout -->
+  <!-- Bottom rule -->
+  <line x1="0" y1="50" x2="260" y2="50" stroke="#D6CFC4" stroke-width="0.75"/>
+</svg>
