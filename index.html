@@ -1,126 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Culminum — Intelligence for the summit of your craft</title>
-  <meta name="description" content="Culminum builds AI tools for professionals who demand accuracy — and for individuals building meaning. Dallas, TX.">
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="/assets/css/styles.css">
-
-  <!-- Minimal meta -->
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://culminum.com/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
 </head>
 <body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&amp;display=swap" rel="stylesheet">
+<style>
+  body { margin:0; background:#F5F2EC; color:#1C1917; -webkit-font-smoothing:antialiased; }
+  a { color:#5C4A32; text-decoration:none; }
+  a:hover { color:#1C1917; }
+</style>
+</helmet>
+<div style="background:#F5F2EC; color:#1C1917; font-family:system-ui,-apple-system,'Segoe UI',sans-serif; min-height:100vh; display:flex; flex-direction:column;">
 
-  <!-- Navigation -->
-  <nav>
-    <div class="container nav-inner">
-      <a href="/" class="logo" aria-label="Culminum — home">
-        <span class="logo-rule"></span>
-        <span>Artes <span class="logo-of">of</span> Culminum</span>
-        <span class="logo-rule"></span>
-      </a>
-      <ul>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+  <header style="display:flex; flex-wrap:wrap; gap:24px; align-items:baseline; justify-content:space-between; padding:28px clamp(20px,6vw,80px); border-bottom:1px solid #D6CFC4;">
+    <a href="#top" style="font-family:'Cormorant Garamond',Georgia,serif; font-size:19px; letter-spacing:0.22em; text-transform:uppercase; color:#1C1917;">Artes <span style="color:#5C4A32; font-style:italic; text-transform:none; letter-spacing:0.05em; font-size:18px;">of</span> Culminum</a>
+    <nav style="display:flex; gap:clamp(20px,4vw,44px); font-size:13px; letter-spacing:0.13em; text-transform:uppercase;">
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <!-- Hero -->
-  <section id="hero">
-    <div class="container">
-      <h1>Intelligence for the summit of your craft.</h1>
-      <p class="subhead">Culminum builds AI tools for professionals who demand accuracy — and for individuals building meaning.</p>
-      <span class="brand-phrase">Artes ad Habitum Culmini</span>
-    </div>
-  </section>
+  <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+  <main id="top" style="flex:1;">
 
-  <hr class="rule">
-
-  <!-- Products -->
-  <section id="products">
-    <div class="container">
-      <div class="section-header">
-        <h2>The Artes</h2>
+    <section style="padding:clamp(72px,13vw,168px) clamp(20px,6vw,80px) clamp(56px,9vw,120px); display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:clamp(40px,7vw,96px); align-items:center; border-bottom:1px solid #D6CFC4;">
+      <div style="max-width:640px;">
+        <h1 style="font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:clamp(40px,6.2vw,74px); line-height:1.06; letter-spacing:-0.015em; margin:0 0 28px; text-wrap:pretty;">Intelligence for the summit of your craft.</h1>
+        <p style="font-size:clamp(16px,1.5vw,19px); line-height:1.65; color:#3A342E; margin:0 0 28px; max-width:52ch; text-wrap:pretty;">Culminum builds AI tools for professionals who demand precision and for individuals building meaning.</p>
+        <p style="font-family:'Cormorant Garamond',Georgia,serif; font-style:italic; font-size:19px; color:#5C4A32; margin:0;">Artes ad Habitum Culmini — <br>The Disciplines of the Inhabited Summit.</p>
       </div>
-      <p class="section-subhead">Each discipline, one purpose.</p>
+      <div style="display:flex; justify-content:center;">
+        <img src="assets/logo-mark.png" alt="Artes of Culminum logo sketch" style="width:100%; max-width:340px; height:auto;">
+      </div>
+    </section>
 
-      <div class="products-grid">
+    <section id="products" style="padding:clamp(64px,9vw,120px) clamp(20px,6vw,80px); border-bottom:1px solid #D6CFC4;">
+      <h2 style="font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:clamp(32px,4vw,46px); margin:0 0 8px;">The Artes</h2>
+      <p style="font-family:'Cormorant Garamond',Georgia,serif; font-style:italic; font-size:21px; color:#5C4A32; margin:0 0 clamp(40px,5vw,64px);">Each discipline, one purpose.</p>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(max(280px,31%),1fr)); gap:1px; background:#D6CFC4; border:1px solid #D6CFC4;">
+        <sc-for list="{{ products }}" as="p" hint-placeholder-count="4">
+          <article style="background:#F5F2EC; padding:clamp(28px,3.6vw,44px);" style-hover="background:#EFEBE3;">
+            <div style="font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:#8A8177; margin-bottom:18px;">{{ p.category }}</div>
+            <h3 style="font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:clamp(28px,3vw,36px); margin:0 0 14px;">{{ p.name }}</h3>
+            <p style="font-size:15.5px; line-height:1.7; color:#3A342E; margin:0; max-width:46ch; text-wrap:pretty;">{{ p.body }}</p>
+          </article>
+        </sc-for>
+      </div>
+    </section>
 
-        <div class="product-card">
-          <p class="category">Architecture</p>
-          <h3>Mensor</h3>
-          <p>Precision scan-to-BIM documentation. LiDAR scanning that meets professional accuracy standards — from the field to ArchiCAD-native walls, doors, and openings.</p>
+    <section id="about" style="padding:clamp(64px,9vw,120px) clamp(20px,6vw,80px); border-bottom:1px solid #D6CFC4;">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:clamp(32px,6vw,80px);">
+        <h2 style="font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:clamp(32px,4vw,46px); margin:0;">About Culminum</h2>
+        <div style="max-width:60ch; display:flex; flex-direction:column; gap:22px; font-size:16.5px; line-height:1.75; color:#3A342E;">
+          <p style="margin:0; text-wrap:pretty;">Culminum LLC was founded by Christopher DiMarco and Brian Alexander in Dallas, Texas. Christopher brings thirty years of architectural practice to the design of our tools.<br>Grounded in the professional experience of existing workflows, our tools work the way you do.</p>
+          <p style="margin:0; text-wrap:pretty;">We build for disciplines that leave no room for guesswork: <br>architecture, documentation, compliance. <br>And we build for the moments that matter outside work:<br>faith, story, history.</p>
+          <p style="margin:0; font-family:'Cormorant Garamond',Georgia,serif; font-size:24px; color:#1C1917; text-wrap:pretty;">Our tools amplify expertise.&nbsp;<br>The Professional is not replaced; <br>They are released.</p>
         </div>
+      </div>
+    </section>
 
-        <div class="product-card">
-          <p class="category">Voice AI</p>
-          <h3>AIvocatum</h3>
-          <p>Hands-free AI assistance built for professionals in motion. Conversations that stay in context, on your schedule, without interrupting your work.</p>
+    <section id="contact" style="padding:clamp(64px,9vw,120px) clamp(20px,6vw,80px);">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:clamp(32px,6vw,80px);">
+        <h2 style="font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:clamp(32px,4vw,46px); margin:0;">Contact</h2>
+        <div>
+          <p style="font-size:16.5px; line-height:1.75; color:#3A342E; margin:0 0 20px;">Inquiries please contact:</p>
+          <a href="mailto:christopher@culminum.com" style="font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(26px,3vw,34px); border-bottom:1px solid #D6CFC4; padding-bottom:4px;">christopher@culminum.com</a>
         </div>
+      </div>
+    </section>
 
-        <div class="product-card">
-          <p class="category">Building Code</p>
-          <h3>ArchEval</h3>
-          <p>Pre-design IBC compliance review. Know what you're allowed to build before you commit to a design direction.</p>
-        </div>
+  </main>
+  </sc-if>
 
-        <div class="product-card">
-          <p class="category">Faith &amp; Reflection</p>
-          <h3>RemindMeDaily</h3>
-          <p>Daily Bible study companion. Scripture-grounded conversation for building a daily faith practice — morning, midday, or wherever you are.</p>
-        </div>
-
+  <sc-if value="{{ isPrivacy }}" hint-placeholder-val="{{ false }}">
+  <main style="flex:1; padding:clamp(56px,8vw,104px) clamp(20px,6vw,80px); max-width:74ch;">
+    <h1 style="font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:clamp(34px,4.6vw,52px); margin:0 0 10px;">Privacy Policy</h1>
+    <p style="font-size:13px; letter-spacing:0.12em; text-transform:uppercase; color:#8A8177; margin:0 0 44px;">Last updated September 9, 2026</p>
+    <div style="display:flex; flex-direction:column; gap:32px; font-size:16.5px; line-height:1.75; color:#3A342E;">
+      <div>
+        <h2 style="font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:26px; color:#1C1917; margin:0 0 10px;">What we collect</h2>
+        <p style="margin:0; text-wrap:pretty;">Your data stays on your device. Culminum does not house, collect, or process the content you create in our apps — scans, models, documents, recordings, journals, and conversations are stored and processed on your own hardware. AI interactions and iCloud storage are governed by your agreements with those providers; the processing and storage of your working data remain on your equipment. This website sets no cookies and runs no advertising or tracking pixels.</p>
+      </div>
+      <div>
+        <h2 style="font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:26px; color:#1C1917; margin:0 0 10px;">How we use it</h2>
+        <p style="margin:0; text-wrap:pretty;">The limited information we do hold — your email address, purchase and license records — is used to answer you, honor your license, and keep accounts in order. Nothing in it is sold or shared for marketing.</p>
+      </div>
+      <div>
+        <h2 style="font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:26px; color:#1C1917; margin:0 0 10px;">Bug reports</h2>
+        <p style="margin:0; text-wrap:pretty;">Bug reports are user-initiated. A report contains anonymized device and technical data with no identifying or confidential content, other than the email address you send it from. We use reports only to diagnose and fix the issue.</p>
+      </div>
+      <div>
+        <h2 style="font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:26px; color:#1C1917; margin:0 0 10px;">Third parties</h2>
+        <p style="margin:0; text-wrap:pretty;">Apple and Google handle app distribution and, where applicable, payments. AI features may transmit the content you choose to send to Anthropic or Google AI in order to generate a response; those exchanges are governed by the providers’ own terms. Culminum does not receive, store, or examine that content.</p>
+      </div>
+      <div>
+        <h2 style="font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:26px; color:#1C1917; margin:0 0 10px;">Data retention</h2>
+        <p style="margin:0; text-wrap:pretty;">What we retain is limited to customer service and license accounting: your email address, support correspondence, and purchase records. None of the data processed by our apps is collected, stored, retained, or examined by Culminum. Retained records are deleted on request.</p>
+      </div>
+      <div>
+        <h2 style="font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:26px; color:#1C1917; margin:0 0 10px;">Contact</h2>
+        <p style="margin:0;">Questions about this policy: <a href="mailto:christopher@culminum.com">christopher@culminum.com</a></p>
       </div>
     </div>
-  </section>
+  </main>
+  </sc-if>
 
-  <hr class="rule">
-
-  <!-- About -->
-  <section id="about">
-    <div class="container">
-      <h2>About Culminum</h2>
-      <div class="about-body">
-        <p>Culminum LLC was founded by Christopher DiMarco and Brian Alexander in Dallas, Texas. Christopher brings twenty years of architectural practice to the design of our tools — the kind of professional experience that keeps our software grounded in how work actually happens, not how software companies imagine it does.</p>
-        <p>We build for disciplines that leave no room for guesswork: architecture, documentation, compliance. And we build for the moments that matter outside work — daily reflection, personal clarity, faith.</p>
-        <p>Our tools amplify expertise. They don't replace the professional.</p>
-      </div>
+  <sc-if value="{{ isTerms }}" hint-placeholder-val="{{ false }}">
+  <main style="flex:1; padding:clamp(56px,8vw,104px) clamp(20px,6vw,80px); max-width:74ch;">
+    <h1 style="font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:clamp(34px,4.6vw,52px); margin:0 0 10px;">Terms of Use</h1>
+    <p style="font-size:13px; letter-spacing:0.12em; text-transform:uppercase; color:#8A8177; margin:0 0 44px;">Last updated September 9, 2026</p>
+    <div style="display:flex; flex-direction:column; gap:24px; font-size:16.5px; line-height:1.75; color:#3A342E;">
+      <p style="margin:0; text-wrap:pretty;">Culminum software is provided as-is. We work to keep it accurate and available, but we make no warranty that it will be uninterrupted or error-free, and we are not liable for losses arising from its use.</p>
+      <p style="margin:0; text-wrap:pretty;">Our tools assist professional work; they do not perform it. Measurements, models, code reviews, and any other AI-generated output must be verified by a qualified professional before being relied upon for design, construction, permitting, or any other consequential decision. Responsibility for that judgment remains with you.</p>
+      <p style="margin:0; text-wrap:pretty;">Questions about these terms: <a href="mailto:christopher@culminum.com">christopher@culminum.com</a></p>
     </div>
-  </section>
+  </main>
+  </sc-if>
 
-  <hr class="rule">
-
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>For product inquiries, partnership discussions, or press:</p>
-      <a href="mailto:christopher@culminum.com" class="email-link">christopher@culminum.com</a>
+  <footer style="border-top:1px solid #D6CFC4; padding:clamp(36px,5vw,56px) clamp(20px,6vw,80px); display:flex; flex-wrap:wrap; gap:16px 40px; justify-content:space-between; align-items:baseline; font-size:14px; color:#6B635A;">
+    <div>Culminum LLC · Dallas, TX</div>
+    <div style="display:flex; gap:24px;">
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#terms">Terms of Use</a>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container footer-inner">
-      <span>Culminum LLC · Dallas, TX</span>
-      <span>
-        <a href="/privacy/">Privacy Policy</a>
-        &nbsp;·&nbsp;
-        <a href="/terms/">Terms of Use</a>
-      </span>
-      <span>© 2026 Culminum LLC. All rights reserved.</span>
-    </div>
+    <div>© 2026 Culminum LLC. All rights reserved.</div>
   </footer>
 
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { route: "" };
+  componentDidMount() {
+    this.sync = () => {
+      const h = (location.hash || "").replace("#", "");
+      const sub = h === "privacy" || h === "terms";
+      this.setState({ route: sub ? h : "" }, () => {
+        if (sub || h === "top" || h === "") { window.scrollTo(0, 0); return; }
+        const el = document.getElementById(h);
+        if (el) window.scrollTo(0, el.getBoundingClientRect().top + window.pageYOffset - 8);
+      });
+    };
+    this.sync();
+    window.addEventListener("hashchange", this.sync);
+  }
+  componentWillUnmount() { window.removeEventListener("hashchange", this.sync); }
+  renderVals() {
+    const r = this.state.route;
+    return {
+      isHome: r === "",
+      isPrivacy: r === "privacy",
+      isTerms: r === "terms",
+      products: [
+        { category: "Architecture", name: "Culminum | Mensor", body: "Precision scan-to-BIM documentation. LiDAR scanning that meets professional accuracy standards — from the field to ArchiCAD-native walls, doors, and openings." },
+        { category: "Voice AI", name: "AIvocatum", body: "Hands-free AI assistance built for professionals in motion. Conversations that stay in context, on your schedule, without interrupting your work." },
+        { category: "Building Code", name: "Culminum | ArchEval", body: "Pre-design code compliance review. Know what you're allowed to build before you commit to a design direction." },
+        { category: "Faith & Reflection", name: "RemindMeDaily | Faith Journal", body: "Daily Bible study companion. Scripture-grounded conversation for building a daily faith practice. A place for stillness wherever you are." },
+        { category: "Preservation", name: "AIracconto", body: "Voice annotation for photographs and documents. The stories the images would tell, preserved by the people who know them; before they're lost." },
+        { category: "History", name: "Culminum | Antiquum", body: "Every place has been home to more than one life. Antiquum assembles the shared record of place, time, and story — deepening as more voices are heard." }
+      ]
+    };
+  }
+}
+</script>
 </body>
 </html>
